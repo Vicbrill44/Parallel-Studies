@@ -1,0 +1,18 @@
+To run mpi_trap_rule.c
+
+We fist want to make sure to source and load mpicc (check out howtorunhelloworld in the same directory)
+We first want to compile it by doing mpicc -g -Wall -o mpi_trap_rule trap_rule.c
+then we want to execute it by doing mpiexec -n 4 ./mpi_trap_rule
+We will then get our answer if we decide to make any changes to the file we can just recompile it by doing...
+mpicc -g -Wall -o mpi_trap_rule trap_rule.c again
+
+One thing to note is that since my cpu on my laptop ryzen 5000 series 7  only has 8 cores and 16 threads
+thus if i can only run a max of 8 processes but if i want to run up to 16 i have to use the command..
+mpiexec -np 16 --use-hwthread-cpus ./mpi_trap_rule
+
+
+
+
+
+
+

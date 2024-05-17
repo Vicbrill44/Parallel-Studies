@@ -1,0 +1,33 @@
+This is a quick rundown as to how to run cuda:
+
+1) To run cuda you must have an NVIDIA GPU
+2) If you do you must download the NVIDIA toolkit to run cuda
+  - This will give you the tools (nvcc) to run CUDA programs
+  - You also need to set an environemnt varaible for nvcc
+  - it is a whole process to setup NVIDIA toolkit
+  - https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
+3) You will need to add the extension .cu to indicate CUDA programs
+  - even though you can write code in C and C++
+4) To compile:
+  nvcc -o hello_cuda hello_cuda.cuda
+5) To execute:
+  ./hello_cuda [thread_blocks][threads_per_block]
+
+  The things in [] are optional but these are typically wanted by the prg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

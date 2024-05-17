@@ -1,0 +1,16 @@
+To run mpi this is what i did:
+
+1) i had an issue on my system where I was being put into a conda environemnt from the jump, I think I fixed into
+ - if i ever see base in my terminal at the beginning of the line it means i am most likely in conda env.
+ - i changed it so that it would be made to be false and also hopefully so it doesnt auto put me into a conda env
+ 2) I downloaded mpicc on my system 
+  - i ran the following commands:
+  sudo dnf install openmpi openmpi-devel //to download openmpi
+  source /etc/profile.d/modules.sh  // to set env variable using fedoras module environemnt program; source it 
+  module load mpi/openmpi-x86_64  //load it 
+
+  // it may be the case that everytime i open up new terminal i may need to source and load mpi to use it
+  // if i want to avoid having to do that i can ...
+  // Do note that you’ll have to source and load the OpenMPI module for every shell you open unless you add it within $HOME/.bashrc.
+
+

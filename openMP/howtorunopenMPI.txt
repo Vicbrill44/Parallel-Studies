@@ -1,0 +1,15 @@
+Create C or C++ program and make sure the program is set up properly to run correctly with openMP 
+- Make sure the compiler supports openMP and set up the pragmas if need be
+
+To compile an openMP program do something like this..
+gcc -g -Wall -fopenmp -o hello_omp hello_omp.c
+
+- note that -fopenmp is unique to openMP
+
+to execute do this
+./hello_omp 4
+
+where hello_omp is the executable and 4 is the number of threads you want to pass into it 
+
+- note that the number of threads you want to pass into it is asked for by the program itself which requires it otherwise we could handle it differntly 
+
