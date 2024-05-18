@@ -1,0 +1,8 @@
+To compile pthreads file in c you do these things:
+gcc g -o hello_threads hello_threads.c -lpthread
+
+
+To exec a compiled pthreads file do this:
+./hello_threads 4
+
+where ./[compiled file] [number of threads]

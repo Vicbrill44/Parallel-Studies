@@ -1,0 +1,9 @@
+Script started on Sat Apr 27 16:38:21 2024
+[vicvas@r1n00 ~]$ srun ./heq_mpi bridge.png 4
+Image size is 2736 by 1824.
+Histogram equalization took 0.061943 seconds
+[vicvas@r1n00 ~]$ exit
+exit
+
+Script done on Sat Apr 27 16:38:35 2024
+
